@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="ruta de la imagen" type="image/x-icon" rel="shortcut icon"/>
+
+</head>
+<style>
+	@font-face{
+	font-family: menu;
+	src:url(fuentes/Seagram.ttf);
+}
+
+
+body{background-color: rgb(95,158,160);
+max-width: 100%;
+width: 100%;
+margin: 0;
+}
+
+ul{
+width: 100%;
+list-style-type:none;
+background-color:rgba(255,255,255,0.5);
+padding: 0;
+}
+li{
+margin:6%;
+padding:4px;
+float:left;
+}
+.derecha{
+	float: right;
+}
+.izquierda{
+	float: left;
+}
+.inicio ul li a{
+	text-decoration: none;
+font-family: menu;	
+}
+.video{
+	float: left;
+	display: inline;
+	margin-left: 5px;
+
+}
+div.clear{clear: both;}
+.izquierda{
+	margin-left: 10px;
+	float:left;
+	width: 49%;
+}
+.derecha{
+	float: right;
+	width: 49%;
+}
+.titulo{
+	text-align: center;
+	}
+	.titulo h1{
+		
+		margin-top: 0;
+	}
+.caracteristicas{
+	float: left;
+	width: 100%;
+}
+.caracteristicas span{
+	float: left;
+	width: 250px;
+	margin-top: 10px;
+}
+.caracteristicas b{
+	width: 150px;
+	float: left;
+margin-top: 10px;
+padding-left: 15px;
+background: transparent url(/images/list_forum.gif) no-repeat 0 50%;
+height: auto;
+clear: both;
+}
+form input.alquilar{
+	width: 150px;
+	height: 35px;
+
+	position: relative;
+	top: 50px;
+	left: 34px;
+	background-color: rgb(255,165,0);
+}
+</style>
+<body>
+
+<div class="inicio">
+<ul>
+<li><a href="Index.html">Inicio</a></li>
+<li><a href="dondeestamos.html">Donde estamos</a></li>
+<li><a href="bootstrap/bootstrap1/Alquiler.html">Alquiler</a></li>
+<li><a href="#">Preguntas Frecuentes</a></li>
+<li><a href="#">Contactos</a></li>
+<div class="clear"></div>
+</ul>
+</div>
+<div class="contenedor">
+<div class="izquierda">
+<img src="imagenes/Seat.jpg" width="100%">
+</div>
+<div class="derecha">
+	<div class="titulo"><h1>Caracteristicas</h1></div>
+	<div class="caracteristicas">
+        <b>Versión:</b>             <span>SC 1.2 12v 60cv Reference</span>
+		<b>Combustible:</b>         <span>Gasolina</span>
+		<b>Potencia Máxima:</b>     <span>60 cv </span>
+        <b>Par Máximo:</b>          <span> - </span>
+        <b>Nº de cilindros:</b>     <span>3 En lÍnea</span>
+        <b>Cilindrada:</b>          <span>1.198 cc</span>
+        <b>Distribución:</b>        <span>Doble árbol de levas en cabeza (DOHC)</span>
+        <b>Alimentación:</b>        <span>Inyección multipunto</span>
+        <b>Tracción:</b>         <span>Delantera                                         </span>
+        <b>Caja de cambios:</b>     <span>Manual 5 velocidades</span>
+    </div>
+</div>
+<form>
+<input class="alquilar" type= "button" name = "nombre" value = "Alquilar" size="5px">
+</form>
+</div>
+</br>
+ <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; OS-CAR 2014</p>
+                </div>
+            </div>
+            
+        </footer>
+</body>
+</html>

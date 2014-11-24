@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="ruta de la imagen" type="image/x-icon" rel="shortcut icon"/>
+
+</head>
+<style>
+	@font-face{
+	font-family: menu;
+	src:url(fuentes/Seagram.ttf);
+}
+h1{border-radius: 25px;
+	border:solid 2px yellow;
+	color:rgb(0,0,255);
+	background-color:yellow;
+}
+
+body{background-color: rgb(160,82,45);
+max-width: 100%;
+width: 100%;
+margin: 0;
+}
+
+ul{
+width: 100%;
+list-style-type:none;
+background-color:rgba(255,255,255,0.5);
+padding: 0;
+}
+li{
+margin:6%;
+padding:4px;
+float:left;
+}
+.derecha{
+	float: right;
+	margin-right:5px; 
+}
+.izquierda{
+	float: left;
+}
+.inicio ul li a{
+	text-decoration: none;
+font-family: menu;	
+}
+.video{
+	float: left;
+	display: inline;
+	margin-left: 5px;
+
+}
+div.clear{clear: both;}
+.izquierda{
+	margin-left: 10px;
+	float:left;
+	width: 49%;
+}
+.derecha{
+	float: right;
+	width: 49%;
+}
+.titulo{
+	text-align: center;
+	}
+	.titulo h1{
+		
+		margin-top: 0;
+	}
+.caracteristicas{
+	float: left;
+	width: 100%;
+}
+.oscar{
+	margin-left:38px;
+	max-width: 100%;
+}
+.españa{
+	float: right;
+	width: 600px;
+	height: 400px;
+	margin-right: 20px;
+}
+
+}
+ #map-canvas {
+ 	        width: 500px;
+        height: 250px;
+</style>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(42.2149604,-8.7479706,149),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<body>
+</head>
+
+<div class="inicio">
+<ul>
+<li><a href="Index.html">Inicio</a></li>
+<li><a href="#">Donde estamos</a></li>
+<li><a href="bootstrap/bootstrap1/Alquiler.html">Alquiler</a></li>
+<li><a href="#">Preguntas Frecuentes</a></li>
+<li><a href="#">Contactos</a></li>
+<div class="clear"></div>
+</ul>
+</div>
+<div class="contenedor">
+<div class="izquierda">
+<div class="titulo"><h1>Donde Estamos</h1></div>
+<div id="map-canvas"style="width:600px; height:400px"></div>
+</div>
+<div class="derecha">
+	<div class="titulo"><h1>Sucursales</h1></div>
+	<div class="dondeestamos">
+        <img class="españa" src="imagenes/españa.jpg">
+    </div>
+</div>
+</div>
+</br>
+ <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; OS-CAR 2014</p>
+                </div>
+            </div>
+            
+        </footer>
+</body>
+</html>

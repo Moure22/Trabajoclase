@@ -1,0 +1,38 @@
+@font-face{
+	font-family: menu;
+	src:url(../fuentes/Seagram.ttf);
+}
+.inicio ul li a{
+	text-decoration: none;
+font-family: menu;	
+}
+ul{
+width: 100%;
+list-style-type:none;
+background-color:rgba(255,255,255,0.5);
+padding: 0;
+}
+li{
+margin:6%;
+float:left;
+}
+
+@media screen and (max-width:1141px ){
+li{
+padding: 0px;
+}
+@media screen and (max-width:1041px ){
+li{
+margin: 5%;
+
+}
+@media screen and (max-width:836px ){
+li{
+margin: 4%;
+
+}
+@media screen and (max-width:1041px ){
+li{
+margin: 3%;
+
+}
